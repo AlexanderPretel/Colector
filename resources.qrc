@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/Colector" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
