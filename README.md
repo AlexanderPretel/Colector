@@ -129,6 +129,8 @@ Para abir un proyecto existente, es necesario tener una estructura similar a la 
 En la interfaz "Colectar" se presentan botones para "Ubicar" que realiza la localización actual y la muestra en el mapa con un círculo verde si el factor DOP es menor a 1 o un círculo rojo si el factor DOP es mayor que 1. También, se encuentra el botón "Colectar" que dependiendo el tipo de geometría que se ha seleccionado en el comboBox, permite realizar la recolección de atributos, localización y su posterior almacenamiento dentro de la capa como un nuevo Feature. Por útlimo, se encuentra el área para colectar vértices que se activa sí y solo sí, la geometría de la capa seleccionada es Linea o Polígono.
 
 # Contacto
-Autor: Alexander Pretel Díaz
-correo: alexander.pretel@correounivalle.edu.co , laboratorio.geoposicionamiento@correounivalle.edu.co 
+Autor: **Alexander Pretel Díaz**
+
+correo: **alexander.pretel@correounivalle.edu.co , laboratorio.geoposicionamiento@correounivalle.edu.co**
+
 ![](images/univalle.jpg)
