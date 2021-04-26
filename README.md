@@ -19,7 +19,7 @@ Esta es una aplicación basada en la API "PyQGIS" que corre en las versiones de 
   - [Instalación del plugin](#instalación-del-plugin)
 
 [Interfaz](#interfaz)
-- [Proyecto](#proyeecto)
+- [Proyecto](#proyecto)
   - [Creación de un nuevo proyecto](#creación-de-un-nuevo-proyecto)
   - [Apertura de un proyecto existente](#apertura-de-un-proyecto-existente)
 - [Colectar](#preparativos)
@@ -101,7 +101,7 @@ sudo chmod a+rw /dev/ttyACM0
 ```
 
 ### Instalación del plugin
-
+Inicialmente, para la instalación del plugin es necesario descargar o clonar los archivos de este repositorio con ``` git clone https://github.com/AlexanderPretel/Colector ``` y copiar la carpeta ```Colector``` a la carpeta ```~/.local/share/QGIS/QGIS3/profiles/default/python/plugins```. El paso a seguir es ejecutar QGIS (anteriormente instalado) y en la pestaña ```complementos -> Administrar e instalar complementos``` seleccionar  
 # Interfaz
 ## Proyecto
 
