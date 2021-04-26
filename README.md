@@ -101,7 +101,13 @@ sudo chmod a+rw /dev/ttyACM0
 ```
 
 ### Instalación del plugin
-Inicialmente, para la instalación del plugin es necesario descargar o clonar los archivos de este repositorio con ``` git clone https://github.com/AlexanderPretel/Colector ``` y copiar la carpeta ```Colector``` a la carpeta ```~/.local/share/QGIS/QGIS3/profiles/default/python/plugins```. El paso a seguir es ejecutar QGIS (anteriormente instalado) y en la pestaña ```complementos -> Administrar e instalar complementos``` seleccionar  
+Inicialmente, para la instalación del plugin es necesario descargar o clonar los archivos de este repositorio con ``` git clone https://github.com/AlexanderPretel/Colector ``` y copiar la carpeta ```Colector``` a la carpeta ```~/.local/share/QGIS/QGIS3/profiles/default/python/plugins```. El paso a seguir es ejecutar QGIS (anteriormente instalado) y en la pestaña ```complementos -> Administrar e instalar complementos``` seleccionar  la pestaña "instalados" como se ve en la siguiente imagen y posteriormente dar click en el checkbox hasta que aparezca como se muestra
+
+![](images/complementos.png)
+
+Al realizar esto, aparecerá en la interfaz de QGIS un nuevo ícono que será el encargado de ejecutar la interfaz de la aplicación.
+
+Nota: Sólo es necesario hacer click en él cuando se inicia QGIS o cuando la interfaz desaparezca del panel.
 # Interfaz
 ## Proyecto
 
