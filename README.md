@@ -36,7 +36,7 @@ Con respecto al receptor, el complemento fué programado para ser usado con el r
 ## Librerías y programas requeridos
 ### PyQGIS
 
-PyQGIS es la API de QGIS que ha sido transformado e interpretado de su lenguaje original C++ a Python, un lenguaje de programación interpretado cuyas carácteristicas principales son la legibilidad de su sintaxis, la orientación a objetos y una amplia comunidad de desarrollo e investigación a lo largo del mundo. Para tener esta API, es necesario tener instalado QGIS, que como lo muestra en su {página de instalación](https://qgis.org/es/site/forusers/alldownloads.html#debian-ubuntu) se realiza de la siguiente manera:
+PyQGIS es la API de QGIS que ha sido transformado e interpretado de su lenguaje original C++ a Python, un lenguaje de programación interpretado cuyas carácteristicas principales son la legibilidad de su sintaxis, la orientación a objetos y una amplia comunidad de desarrollo e investigación a lo largo del mundo. Para tener esta API, es necesario tener instalado QGIS, que como lo muestra en su [página de instalación](https://qgis.org/es/site/forusers/alldownloads.html#debian-ubuntu) se realiza de la siguiente manera:
 Primero es necesario instalar algunas herramientas que se necesitan:
 ```bash
 sudo apt install gnupg software-properties-common
