@@ -109,7 +109,10 @@ Al realizar esto, aparecerá en la interfaz de QGIS un nuevo ícono que será el
 
 Nota: Sólo es necesario hacer click en él cuando se inicia QGIS o cuando la interfaz desaparezca del panel.
 # Interfaz
+![](images/interfaz.png)
+
 ## Proyecto
+
 
 ### Creación de un nuevo proyecto
 
