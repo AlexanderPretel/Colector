@@ -108,16 +108,27 @@ Inicialmente, para la instalación del plugin es necesario descargar o clonar lo
 Al realizar esto, aparecerá en la interfaz de QGIS un nuevo ícono que será el encargado de ejecutar la interfaz de la aplicación.
 
 Nota: Sólo es necesario hacer click en él cuando se inicia QGIS o cuando la interfaz desaparezca del panel.
+
 # Interfaz
 ![](images/interfaz.png)
 
 ## Proyecto
-
+![](images/proyecto.png)
 
 ### Creación de un nuevo proyecto
+Al dar click en el botón "Crear" en la interfaz "Proyecto" se abré una ventana de diálogo que permite crear una nueva carpeta. El complemento automáticamente genera una estructura de carpetas como la siguiente:
+* Base
+* Export
+* Survey
 
 ### Apertura de un proyecto existente
+Para abir un proyecto existente, es necesario tener una estructura similar a la presentada en [Creacioón de un nuevo proyecto](#creación-de-un-nuevo-proyecto) y es recomendable tener dentro de la carpeta "Base" las capas que serán utilizadas al momento del levantamiento. Al momento de dar click en el botón "Cargar" en la interfaz "Proyecto" que permite realizar la apertura de un poryecto existente. 
 
 ## Colectar
+![](images/colectar.png)
+En la interfaz "Colectar" se presentan botones para "Ubicar" que realiza la localización actual y la muestra en el mapa con un círculo verde si el factor DOP es menor a 1 o un círculo rojo si el factor DOP es mayor que 1. También, se encuentra el botón "Colectar" que dependiendo el tipo de geometría que se ha seleccionado en el comboBox, permite realizar la recolección de atributos, localización y su posterior almacenamiento dentro de la capa como un nuevo Feature. Por útlimo, se encuentra el área para colectar vértices que se activa sí y solo sí, la geometría de la capa seleccionada es Linea o Polígono.
 
 # Contacto
+Autor: Alexander Pretel Díaz
+correo: alexander.pretel@correounivalle.edu.co , laboratorio.geoposicionamiento@correounivalle.edu.co 
+![](images/univalle.jpg)
