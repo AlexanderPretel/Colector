@@ -27,7 +27,7 @@ Esta es una aplicación basada en la API "PyQGIS" que corre en las versiones de 
 [Contacto](#contacto)
 
 # Información general
-El complemento de QGIS "Colector" es una aplicación que funciona incrustada en [QGIS](https://www.qgis.org)  y que fué programado para ser usado en sistemas operativos distribuciones basadaos en Linux como [Ubuntu](https://ubuntu.com) y [Ubuntu Mate](https://ubuntu-mate.org) y distribuciones basadas en Debian como [Raspberry Pi OS](https://www.raspberrypi.org/software/) y está principalmente creado para ser usado en arquitecturas ARM aunque funciona perfectamente en AMD64. El legunaje de programación utilizado es python en su versión 3.6 y funciona para versiones de QGIS que sean iguales o superiores a la versión 3.0. 
+El complemento de QGIS "Colector" es una aplicación que funciona incrustada en [QGIS](https://www.qgis.org)  y que fué programado para ser usado en distribuciones basadaos en Linux como [Ubuntu](https://ubuntu.com) y [Ubuntu Mate](https://ubuntu-mate.org) y distribuciones basadas en Debian como [Raspberry Pi OS](https://www.raspberrypi.org/software/) y está principalmente creado para ser usado en arquitecturas ARM aunque funciona perfectamente en AMD64. El legunaje de programación utilizado es python en su versión 3.6 y funciona para versiones de QGIS que sean iguales o superiores a la versión 3.0. 
 En términos generales el complemento funciona haciendo uso de la clase [QgsGpsConnection](https://qgis.org/pyqgis/3.4/core/QgsGpsConnection.html?highlight=qgsgps#module-QgsGpsConnection) que viene dentro de la [API](https://qgis.org/pyqgis/3.4/) de QGIS para utilizar la información que el receptor envía en formato [NMEA](https://www.nmea.org/content/MEMBERSHIP/about_nmea) a través del puerto serial, conetandose al receptor, decodificando y extrayendo la información correspondinete a la ubicación geográfica que está siendo estimada en tiempo real por el receptor. Con el fin de mejorar la precisión de esta estimación se realiza la recolección de los datos crudos de la observación GNSS que fueron recepcionados y calculados por el receptor y se almacenan en un formato binario proporcionado por la casa fabricante del receptor (en este caso ubx), todo es esto con ayuda del software [RTKLIB](http://www.rtklib.com). 
 
 Con respecto al receptor, el complemento fué programado para ser usado con el receptor [u-blox M8T](https://www.u-blox.com/en/product/neolea-m8t-series) pero puede funcionar con cualquier receptor de esta marca que tenga la capacidad de colectar los datos crudos de la observación GNSS. El receptor debe conectarse al dispositivo en el cual se esté corriendo el sistema operativo a través del puerto serial.
@@ -76,7 +76,7 @@ Además, soporta la comunicación externa con el receptor vía:
  
 #### Descarga
 Para descargar RTKLIB hay 2 opciones:
-#### Desde el Advanced Packaging Tool (recomendado):
+##### Desde el Advanced Packaging Tool (recomendado):
 Haciendo uso de [apt](https://help.ubuntu.com/kubuntu/desktopguide/es/apt-get.html) (Advanced Packaging Tool), es posible instalar en linux los binarios de RTKLIB, los cuales quedarán listos para ser usados desde una consola de comandos, sin modificar la estructura de la carpeta /usr/bin. El comando en bash es el siguiente:
 ```bash
 sudo apt install rtklib
@@ -87,6 +87,18 @@ En la página oficial [RTKLIB](http://www.rtklib.com) permite realizar la descar
 
 ## Preparativos 
 ### Habilitar puerto serial
+En linux, los dispositivos externos se tratan como si fueran archivos, por lo que para encontrar el puerto serial por el que se conecta el receptor habrá que navegar a la carpeta /dev. Normalmente este puerto serial tiene por nombre ttyACM0 y si intentamos acceder a él ya sea por un software de lectura y escritura de puertos serial o por una librería de algún lenguaje de programación como por ejemplo [pyserial](https://github.com/pyserial/pyserial), el programa arrojará un error ``` [Error #]: Access is Denied ``` , que corresponde a un error al momento de acceder al archivo con ruta /dev/ttyACM0. Actualmente hay multiples soluciones para este problema, pero las dos principales son las siguientes:
+* Agregar el usuario actual al grupo dialout (recomendado):
+```bash
+sudo usermod -a -G dialout $USER
+```
+
+* Agregar temporalmente permisos de lectura y escritura a todos los usuarios:
+
+Nota: Como los permisos son temporales, cada que se reinicie el dispositivo será necesario volver a agregarlos:
+```bash
+sudo chmod a+rw /dev/ttyACM0
+```
 
 ### Instalación del plugin
 
