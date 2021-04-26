@@ -2,7 +2,7 @@
 # collectorQgis
 ![](/icon.png)
 
-Esta es una aplicación basada en la API "PyQGIS" que corre en las versiones de QGIS superiores a 3.0 como un complemento adicional. La función principal es la recolección de información espacial y alfanumérica con ayuda de un receptor GNSS monofrecuencia de la marca u-blox (ublox M8T) y de la clase QgsGpsConnection, así comoo la recolección de los datos de observación y navegación GNSS que el receptor está generando a partir de su operación. 
+Esta es una aplicación basada en la API "PyQGIS" que corre en las versiones de QGIS superiores a 3.0 como un complemento adicional. La función principal es la recolección de información espacial y alfanumérica con ayuda de un receptor GNSS monofrecuencia de la marca u-blox (ublox M8T) y de la clase QgsGpsConnection, así como la recolección de los datos de observación y navegación GNSS que el receptor está generando a partir de su operación. 
 
 ## Contenido
 [Información general](#información-general)
@@ -59,7 +59,7 @@ sudo apt update && sudo apt install qgis qgis-plugin-grass
 
 ### RTKLIB
 
-RTKLIB es un software de código abierto para el procesamiento y la recolección de datos crudos provenientes de observaciones GNSS. Éste software provee herramientas GUI y CUI con los que, que permite realizar posicionamientos con las constelaciones GPS, GLONASS, GALILEO, QZSS, BeiDoy y SBAS y con los métodos de posicionamiento Single, Static, Kinematic, Fixed, entre otros. Soporta múltiples versiones del formato intercambiable RINEX y puede leer, decodificar y almacenar los mensajes de los principales receptores GNSS propietarios tales como: 
+RTKLIB es un software de código abierto para el procesamiento y la recolección de datos crudos provenientes de observaciones GNSS. Éste software provee herramientas GUI y CUI  que permite realizar posicionamientos con las constelaciones GPS, GLONASS, GALILEO, QZSS, BeiDoy y SBAS y con los métodos de posicionamiento Single, Static, Kinematic, Fixed, entre otros. Soporta múltiples versiones del formato intercambiable RINEX y puede leer, decodificar y almacenar los mensajes de los principales receptores GNSS propietarios tales como: 
 * NovAtel: OEM4/V/6, OEM3, OEMStar, Superstar II
 * Hemisphere: Eclipse, Crescent
 * u-blox: LEA-4T/5T/6T/8T
@@ -83,7 +83,7 @@ sudo apt install rtklib
 ```
 
 ##### Desde la página oficial:
-En la página oficial [RTKLIB](http://www.rtklib.com) permite realizar la descarga tanto de las aplicación con GUI (que tienen interfaz gráfica de usuario) como los binarios que son losq ue realmente serán utilizados. Para hacer uso de estas, es necesario realizar un [enlace simbólico](https://kb.iu.edu/d/abbe), con el que se busca poder ejecutar estos binarios sin necesidad de llamar directamente la ruta en la que se encuentran los binarios.
+En la página oficial [RTKLIB](http://www.rtklib.com) permite realizar la descarga tanto de las aplicación con GUI (que tienen interfaz gráfica de usuario) como los binarios que son los que realmente serán utilizados. Para hacer uso de estas, es necesario realizar un [enlace simbólico](https://kb.iu.edu/d/abbe), con el que se busca poder ejecutar estos binarios sin necesidad de llamar directamente la ruta en la que se encuentran los binarios.
 
 ## Preparativos 
 ### Habilitar puerto serial
