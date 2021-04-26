@@ -9,7 +9,7 @@
         begin                : 2021-03-04
         copyright            : (C) 2021 by Alexander Pretel Díaz
         email                : alexander.pretel@correounivalle.edu.co
-        git sha              : $Format:%H$
+        git sha              : https://github.com/AlexanderPretel/Colector
  ***************************************************************************/
 
 /***************************************************************************
